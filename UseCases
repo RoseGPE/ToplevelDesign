@@ -10,7 +10,7 @@ rectangle Racecar {
         Driver <-> [Steering]
         Driver -> (Accelerate)
         Driver -> (Brake)
-        Driver -> (Shit)
+        Driver -> (Shift)
         Driver -> (Clutch)
         Driver <- (Driver Restrainment)
     }
