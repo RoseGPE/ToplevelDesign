@@ -1,0 +1,21 @@
+@startuml
+scale 0.9
+skinparam monochrome true
+left to right direction
+
+actor "Driver"
+
+rectangle Racecar {
+    rectangle "Driver Interface" {
+        Driver <-> [Steering]
+        Driver -> (Accelerate)
+        Driver -> (Brake)
+        Driver -> (Shift)
+        Driver -> (Clutch)
+        Driver <- (Driver Restrainment)
+    }
+
+}
+
+
+@enduml
